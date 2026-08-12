@@ -84,23 +84,27 @@ body {
 
 .navbar {
     position: sticky;
+    display: flex;
     top: 4px;
     margin-left: 4px;
     margin-right: 4px;
     border-radius: 8px;
     background-color: #121B4A;
     padding: 8px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul {
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 16px;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .navbar ul li {
@@ -120,7 +124,7 @@ body {
     width: 100%;
 }
 
-.navbar ul li a img {
+.navbar a img {
     height: auto;
     width: auto;
 }
@@ -152,7 +156,7 @@ body {
     padding: 6px 8px;
 }
 
-.navbar ul li.logo img {
+.navbar a.logo img {
     height: 64px;
     width: auto;
     display: block;
